@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b3b2077-0137-4d44-98ca-74e898975daa" name="Default Changelist" comment="" />
+    <list default="true" id="3b3b2077-0137-4d44-98ca-74e898975daa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +40,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="E:\workplace\IDEAWorkSpace\tensquare_parent\.idea" />
+      </set>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -211,12 +222,38 @@
       <workItem from="1576687951570" duration="10672000" />
       <workItem from="1576768791470" duration="22000" />
       <workItem from="1576894623635" duration="5724000" />
-      <workItem from="1577237921743" duration="17107000" />
+      <workItem from="1577237921743" duration="17947000" />
     </task>
+    <task id="LOCAL-00001" summary="123">
+      <created>1577266023046</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577266023046</updated>
+    </task>
+    <task id="LOCAL-00002" summary="123">
+      <created>1577266078834</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1577266078834</updated>
+    </task>
+    <task id="LOCAL-00003" summary="123">
+      <created>1577266216625</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577266216625</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="123" />
+    <option name="LAST_COMMIT_MESSAGE" value="123" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Assign_Data_Sources" timestamp="1576715738533">
@@ -243,10 +280,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1576715384032" />
-    <state x="448" y="112" key="CommitChangelistDialog2" timestamp="1577266077270">
+    <state x="448" y="112" key="CommitChangelistDialog2" timestamp="1577266215993">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="448" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577266077270" />
+    <state x="448" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577266215993" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1577266169526">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -299,6 +336,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="559" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1577266094274" />
+    <state x="759" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577266932547">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="759" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1577266932547" />
     <state x="655" y="119" width="647" height="801" key="find.popup" timestamp="1576896829516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
