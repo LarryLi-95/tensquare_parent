@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b3b2077-0137-4d44-98ca-74e898975daa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tensquare_spit/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_spit/src/main/java/com/tensquare/spit/SpitApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_spit/src/main/java/com/tensquare/spit/controller/SpitController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_spit/src/main/java/com/tensquare/spit/dao/SpitDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_spit/src/main/java/com/tensquare/spit/pojo/Spit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_spit/src/main/java/com/tensquare/spit/service/SpitService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_spit/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_spit/tensquare_spit.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,13 +78,16 @@
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
   <component name="ProjectId" id="1V9wgKB9BxftY80DnWYVS3X6WG5" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -110,7 +123,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GatheringApplication">
+  <component name="RunManager" selected="Spring Boot.SpitApplication">
     <configuration name="GatheringApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tensquare.gathering.GatheringApplication" />
       <module name="tensquare_gathering" />
@@ -133,19 +146,6 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.tensquare.article.ArticleApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="tensquare_base" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tensquare.base.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tensquare.base.BaseApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -176,13 +176,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpitApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="tensquare_spit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tensquare.spit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tensquare.spit.SpitApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.SpitApplication" />
         <item itemvalue="Application.GatheringApplication" />
         <item itemvalue="Spring Boot.ArticleApplication" />
         <item itemvalue="Spring Boot.QaApplication" />
         <item itemvalue="Spring Boot.RecruitApplication" />
-        <item itemvalue="Spring Boot.BaseApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -190,6 +203,7 @@
     <option name="viewStates">
       <list>
         <serviceView>
+          <option name="contentProportion" value="0.012121212" />
           <treeState>
             <expand>
               <path>
@@ -199,7 +213,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -222,7 +236,9 @@
       <workItem from="1576687951570" duration="10672000" />
       <workItem from="1576768791470" duration="22000" />
       <workItem from="1576894623635" duration="5724000" />
-      <workItem from="1577237921743" duration="17947000" />
+      <workItem from="1577237921743" duration="19557000" />
+      <workItem from="1577323313489" duration="1333000" />
+      <workItem from="1577342916136" duration="7401000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1577266023046</created>
@@ -245,15 +261,24 @@
       <option name="project" value="LOCAL" />
       <updated>1577266216625</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="修改描述文件">
+      <created>1577266957557</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577266957557</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="123" />
-    <option name="LAST_COMMIT_MESSAGE" value="123" />
+    <MESSAGE value="修改描述文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改描述文件" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Assign_Data_Sources" timestamp="1576715738533">
@@ -264,10 +289,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="212" key="#HTTP_Proxy/0.0.1920.1040@0.0.1920.1040" timestamp="1576726542194" />
-    <state x="552" y="178" key="#Project_Structure" timestamp="1577253872950">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1577343200099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1577253872950" />
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1577343200099" />
     <state x="676" y="373" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1576682064228">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -280,46 +305,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1576715384032" />
-    <state x="448" y="112" key="CommitChangelistDialog2" timestamp="1577266215993">
+    <state x="448" y="112" key="CommitChangelistDialog2" timestamp="1577266956996">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="448" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577266215993" />
+    <state x="448" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577266956996" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1577266169526">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1577266169526" />
-    <state width="1860" height="282" key="GridCell.Tab.0.bottom" timestamp="1577265223721">
+    <state width="1808" height="368" key="GridCell.Tab.0.bottom" timestamp="1577351290583">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577265223721" />
-    <state width="1860" height="282" key="GridCell.Tab.0.center" timestamp="1577265223721">
+    <state width="1808" height="368" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577351290583" />
+    <state width="1808" height="368" key="GridCell.Tab.0.center" timestamp="1577351290583">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577265223721" />
-    <state width="1860" height="282" key="GridCell.Tab.0.left" timestamp="1577265223721">
+    <state width="1808" height="368" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577351290583" />
+    <state width="1808" height="368" key="GridCell.Tab.0.left" timestamp="1577351290582">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577265223721" />
-    <state width="1860" height="282" key="GridCell.Tab.0.right" timestamp="1577265223721">
+    <state width="1808" height="368" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577351290582" />
+    <state width="1808" height="368" key="GridCell.Tab.0.right" timestamp="1577351290583">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577265223721" />
-    <state width="1281" height="279" key="GridCell.Tab.1.bottom" timestamp="1577263066753">
+    <state width="1808" height="368" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577351290583" />
+    <state width="1808" height="368" key="GridCell.Tab.1.bottom" timestamp="1577351290583">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1281" height="279" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577263066753" />
-    <state width="1281" height="279" key="GridCell.Tab.1.center" timestamp="1577263066753">
+    <state width="1808" height="368" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577351290583" />
+    <state width="1808" height="368" key="GridCell.Tab.1.center" timestamp="1577351290583">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1281" height="279" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577263066753" />
-    <state width="1281" height="279" key="GridCell.Tab.1.left" timestamp="1577263066753">
+    <state width="1808" height="368" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577351290583" />
+    <state width="1808" height="368" key="GridCell.Tab.1.left" timestamp="1577351290583">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1281" height="279" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577263066753" />
-    <state width="1281" height="279" key="GridCell.Tab.1.right" timestamp="1577263066753">
+    <state width="1808" height="368" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577351290583" />
+    <state width="1808" height="368" key="GridCell.Tab.1.right" timestamp="1577351290583">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1281" height="279" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577263066753" />
+    <state width="1808" height="368" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577351290583" />
     <state width="220" height="477" key="HiddenNamespacesPopup" timestamp="1577265234718">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -332,22 +357,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" width="1369" height="716" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576735643239" />
-    <state x="559" y="253" key="Vcs.Push.Dialog.v2" timestamp="1577266094274">
+    <state x="559" y="253" key="Vcs.Push.Dialog.v2" timestamp="1577266959957">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="559" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1577266094274" />
-    <state x="759" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577266932547">
+    <state x="559" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1577266959957" />
+    <state x="759" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577267629290">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="759" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1577266932547" />
+    <state x="759" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1577267629290" />
     <state x="655" y="119" width="647" height="801" key="find.popup" timestamp="1576896829516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="655" y="119" width="647" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576896829516" />
-    <state x="334" y="184" key="new project wizard" timestamp="1576682298715">
+    <state x="334" y="184" key="new project wizard" timestamp="1577342993098">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="334" y="184" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1576682298715" />
+    <state x="334" y="184" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1577342993098" />
+    <state x="623" y="242" key="run.anything.popup" timestamp="1577346861711">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="242" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1577346861711" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1577244571450">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
