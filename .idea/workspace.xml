@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b3b2077-0137-4d44-98ca-74e898975daa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tensquare_spit/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tensquare_spit/src/main/java/com/tensquare/spit/SpitApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tensquare_spit/src/main/java/com/tensquare/spit/controller/SpitController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tensquare_spit/src/main/java/com/tensquare/spit/dao/SpitDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tensquare_spit/src/main/java/com/tensquare/spit/pojo/Spit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tensquare_spit/src/main/java/com/tensquare/spit/service/SpitService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tensquare_spit/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tensquare_spit/tensquare_spit.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_search/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_search/src/main/java/com/tensquare/search/SearchApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_search/src/main/java/com/tensquare/search/controller/ArticleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_search/src/main/java/com/tensquare/search/dao/ArticleSearchDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_search/src/main/java/com/tensquare/search/pojo/Article.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_search/src/main/java/com/tensquare/search/service/ArticleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_search/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tensquare_search/tensquare_search.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -96,6 +96,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ToolWindowAnt.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
@@ -123,8 +124,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpitApplication">
-    <configuration name="GatheringApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.SearchApplication">
+    <configuration name="GatheringApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tensquare.gathering.GatheringApplication" />
       <module name="tensquare_gathering" />
       <extension name="coverage">
@@ -137,7 +138,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArticleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ArticleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="tensquare_article" />
       <extension name="coverage">
         <pattern>
@@ -150,7 +151,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="BaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="tensquare_base" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tensquare.base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tensquare.base.BaseApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="tensquare_qa" />
       <extension name="coverage">
         <pattern>
@@ -163,20 +177,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RecruitApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="tensquare_recruit" />
+    <configuration name="SearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="tensquare_search" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tensquare.recruit.*" />
+          <option name="PATTERN" value="com.tensquare.search.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tensquare.recruit.RecruitApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tensquare.search.SearchApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpitApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="SpitApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="tensquare_spit" />
       <extension name="coverage">
         <pattern>
@@ -191,11 +205,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SpitApplication" />
-        <item itemvalue="Application.GatheringApplication" />
-        <item itemvalue="Spring Boot.ArticleApplication" />
-        <item itemvalue="Spring Boot.QaApplication" />
-        <item itemvalue="Spring Boot.RecruitApplication" />
+        <item itemvalue="Spring Boot.SearchApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +213,7 @@
     <option name="viewStates">
       <list>
         <serviceView>
-          <option name="contentProportion" value="0.012121212" />
+          <option name="contentProportion" value="0.13708356" />
           <treeState>
             <expand>
               <path>
@@ -213,7 +223,12 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Not Started" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -238,7 +253,8 @@
       <workItem from="1576894623635" duration="5724000" />
       <workItem from="1577237921743" duration="19557000" />
       <workItem from="1577323313489" duration="1333000" />
-      <workItem from="1577342916136" duration="7401000" />
+      <workItem from="1577342916136" duration="9772000" />
+      <workItem from="1577410550213" duration="10351000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1577266023046</created>
@@ -268,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577266957557</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="添加吐槽模块 使用mongoDB">
+      <created>1577351346993</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1577351346993</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,7 +301,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="123" />
     <MESSAGE value="修改描述文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改描述文件" />
+    <MESSAGE value="添加吐槽模块 使用mongoDB" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加吐槽模块 使用mongoDB" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Assign_Data_Sources" timestamp="1576715738533">
@@ -289,10 +313,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="212" key="#HTTP_Proxy/0.0.1920.1040@0.0.1920.1040" timestamp="1576726542194" />
-    <state x="552" y="178" key="#Project_Structure" timestamp="1577343200099">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1577426739166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1577343200099" />
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1577426739166" />
     <state x="676" y="373" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1576682064228">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -305,46 +329,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1576715384032" />
-    <state x="448" y="112" key="CommitChangelistDialog2" timestamp="1577266956996">
+    <state x="448" y="112" key="CommitChangelistDialog2" timestamp="1577351346041">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="448" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577266956996" />
+    <state x="448" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577351346041" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1577266169526">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1577266169526" />
-    <state width="1808" height="368" key="GridCell.Tab.0.bottom" timestamp="1577351290583">
+    <state width="1579" height="182" key="GridCell.Tab.0.bottom" timestamp="1577439345993">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1808" height="368" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577351290583" />
-    <state width="1808" height="368" key="GridCell.Tab.0.center" timestamp="1577351290583">
+    <state width="1579" height="182" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577439345993" />
+    <state width="1579" height="182" key="GridCell.Tab.0.center" timestamp="1577439345992">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1808" height="368" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577351290583" />
-    <state width="1808" height="368" key="GridCell.Tab.0.left" timestamp="1577351290582">
+    <state width="1579" height="182" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577439345992" />
+    <state width="1579" height="182" key="GridCell.Tab.0.left" timestamp="1577439345992">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1808" height="368" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577351290582" />
-    <state width="1808" height="368" key="GridCell.Tab.0.right" timestamp="1577351290583">
+    <state width="1579" height="182" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577439345992" />
+    <state width="1579" height="182" key="GridCell.Tab.0.right" timestamp="1577439345992">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1808" height="368" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577351290583" />
-    <state width="1808" height="368" key="GridCell.Tab.1.bottom" timestamp="1577351290583">
+    <state width="1579" height="182" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577439345992" />
+    <state width="1579" height="182" key="GridCell.Tab.1.bottom" timestamp="1577439345993">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1808" height="368" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577351290583" />
-    <state width="1808" height="368" key="GridCell.Tab.1.center" timestamp="1577351290583">
+    <state width="1579" height="182" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577439345993" />
+    <state width="1579" height="182" key="GridCell.Tab.1.center" timestamp="1577439345993">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1808" height="368" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577351290583" />
-    <state width="1808" height="368" key="GridCell.Tab.1.left" timestamp="1577351290583">
+    <state width="1579" height="182" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577439345993" />
+    <state width="1579" height="182" key="GridCell.Tab.1.left" timestamp="1577439345993">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1808" height="368" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577351290583" />
-    <state width="1808" height="368" key="GridCell.Tab.1.right" timestamp="1577351290583">
+    <state width="1579" height="182" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577439345993" />
+    <state width="1579" height="182" key="GridCell.Tab.1.right" timestamp="1577439345993">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1808" height="368" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577351290583" />
+    <state width="1579" height="182" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577439345993" />
     <state width="220" height="477" key="HiddenNamespacesPopup" timestamp="1577265234718">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -357,22 +381,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" width="1369" height="716" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576735643239" />
-    <state x="559" y="253" key="Vcs.Push.Dialog.v2" timestamp="1577266959957">
+    <state x="559" y="253" key="Vcs.Push.Dialog.v2" timestamp="1577351349030">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="559" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1577266959957" />
-    <state x="759" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577267629290">
+    <state x="559" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1577351349030" />
+    <state x="759" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577439352906">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="759" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1577267629290" />
+    <state x="759" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1577439352906" />
     <state x="655" y="119" width="647" height="801" key="find.popup" timestamp="1576896829516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="655" y="119" width="647" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576896829516" />
-    <state x="334" y="184" key="new project wizard" timestamp="1577342993098">
+    <state x="334" y="184" key="new project wizard" timestamp="1577426479438">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="334" y="184" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1577342993098" />
+    <state x="334" y="184" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1577426479438" />
     <state x="623" y="242" key="run.anything.popup" timestamp="1577346861711">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
