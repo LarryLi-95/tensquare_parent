@@ -1,11 +1,13 @@
 package com.tensquare.user.controller;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -19,6 +21,7 @@ import com.tensquare.user.service.UserService;
 import entity.PageResult;
 import entity.Result;
 import entity.StatusCode;
+import util.JwtUtil;
 
 /**
  * 控制器层
@@ -35,6 +38,25 @@ public class UserController {
 
     @Autowired
     private RedisTemplate redisTemplate;
+
+    @Autowired
+    private JwtUtil jwtUtil;
+
+    /**
+     * 用户注册
+     */
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    public Result login(@RequestBody User user) {
+        user = userService.login(user.getMobile(), user.getPassword());
+        if (user == null) {
+            return new Result(false, StatusCode.LOGINERROR, "登录失败!");
+        }
+        String token = jwtUtil.createJWT(user.getId(), user.getMobile(), "user");
+        Map<String, Object> map = new HashMap<>();
+        map.put("token", token);
+        map.put("roles", "user");
+        return new Result(true, StatusCode.OK, "登录成功!", map);
+    }
 
     /**
      * 发送短信验证码
@@ -134,7 +156,7 @@ public class UserController {
     }
 
     /**
-     * 删除
+     * 删除 必须有admin角色才可以删除
      *
      * @param id
      */

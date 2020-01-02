@@ -1,0 +1,28 @@
+package com.tensquare.jwt;
+
+import io.jsonwebtoken.JwtBuilder;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
+
+import java.util.Date;
+
+/**
+ * @projectName:tensquare_parent
+ * @packageName:com.tensquare.jwt
+ * @className:CreateJwt
+ * @author:larry
+ * @date:2019/12/31 14:51
+ * @description:
+ */
+public class CreateJwt {
+    public static void main(String[] args) {
+        JwtBuilder jwtBuilder = Jwts.builder()
+                .setId("666")
+                .setSubject("小马")
+                .setIssuedAt(new Date())
+                .signWith(SignatureAlgorithm.HS256,"itcast")
+                .setExpiration(new Date(new Date().getTime()+60000))
+                .claim("role","admin");
+        System.out.println(jwtBuilder.compact());
+    }
+}
