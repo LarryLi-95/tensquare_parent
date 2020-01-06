@@ -6,6 +6,8 @@ import entity.PageResult;
 import entity.Result;
 import entity.StatusCode;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,12 +26,17 @@ import java.util.zip.ZipEntry;
 @RestController
 @CrossOrigin
 @RequestMapping("/label")
+@RefreshScope
 public class LabelController {
     @Autowired
     private LabelService labelService;
 
+    @Value("${ip}")
+    private String ip;
+
     @RequestMapping(method = RequestMethod.GET)
     public Result findAll() {
+        System.out.println("ip为:" + ip);
         return new Result(true, (Integer) StatusCode.OK, "查询成功", labelService.findAll());
     }
 
@@ -61,12 +68,12 @@ public class LabelController {
     @RequestMapping(value = "/search", method = RequestMethod.POST)
     public Result findSearch(@RequestBody Label label) {
         List<Label> labelList = labelService.findSearch(label);
-        return new Result(true, StatusCode.OK, "查询成功",labelList);
+        return new Result(true, StatusCode.OK, "查询成功", labelList);
     }
 
     @RequestMapping(value = "/search/{page}/{size}", method = RequestMethod.POST)
-    public Result pageQuery(@RequestBody Label label,@PathVariable int page,@PathVariable int size) {
-        Page<Label> pageData = labelService.pageQuery(label,page,size);
-        return new Result(true, StatusCode.OK, "查询成功",new PageResult<Label>(pageData.getTotalElements(),pageData.getContent()));
+    public Result pageQuery(@RequestBody Label label, @PathVariable int page, @PathVariable int size) {
+        Page<Label> pageData = labelService.pageQuery(label, page, size);
+        return new Result(true, StatusCode.OK, "查询成功", new PageResult<Label>(pageData.getTotalElements(), pageData.getContent()));
     }
 }

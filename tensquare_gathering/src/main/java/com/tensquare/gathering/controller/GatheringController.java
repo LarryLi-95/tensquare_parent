@@ -25,6 +25,7 @@ import entity.StatusCode;
 @RestController
 @CrossOrigin
 @RequestMapping("/gathering")
+@RefreshScope
 public class GatheringController {
 
 	@Autowired

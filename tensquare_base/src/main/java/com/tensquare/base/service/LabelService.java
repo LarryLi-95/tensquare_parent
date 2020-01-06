@@ -11,15 +11,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import util.IdWorker;
 
-import javax.persistence.Persistence;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
-import java.util.zip.ZipEntry;
 
 /**
  * @projectName:tensquare_parent
@@ -29,11 +26,13 @@ import java.util.zip.ZipEntry;
  * @date:2019/12/19 0:37
  * @description:
  */
-@Service
 @Transactional
+@Service
 public class LabelService {
+
     @Autowired
     private LabelDao labelDao;
+
     @Autowired
     private IdWorker idWorker;
 
@@ -75,8 +74,8 @@ public class LabelService {
                     Predicate predicate = cb.like(root.get("labelname").as(String.class), "%" + label.getLabelname() + "%");//相当于 where labelname like "%小明%"
                     predicateList.add(predicate);
                 }
-                if(label.getState()!=null&&"".equals(label.getState())){
-                    Predicate predicate = cb.equal(root.get("state").as(String.class),  label.getState() );// where state ="1"
+                if (label.getState() != null && "".equals(label.getState())) {
+                    Predicate predicate = cb.equal(root.get("state").as(String.class), label.getState());// where state ="1"
                 }
                 //new 一个数组作为最终返回值
                 Predicate[] predicates = new Predicate[predicateList.size()];
@@ -89,7 +88,7 @@ public class LabelService {
 
     public Page<Label> pageQuery(Label label, int page, int size) {
         //封装分页对象
-        Pageable pageable= PageRequest.of(page-1,size);
+        Pageable pageable = PageRequest.of(page - 1, size);
         return labelDao.findAll(new Specification<Label>() {
             /*
              *@param root 根对象,也就是说要把条件封装到那个对象中.where 类名=label.getId
@@ -104,8 +103,8 @@ public class LabelService {
                     Predicate predicate = cb.like(root.get("labelname").as(String.class), "%" + label.getLabelname() + "%");//相当于 where labelname like "%小明%"
                     predicateList.add(predicate);
                 }
-                if(label.getState()!=null&&"".equals(label.getState())){
-                    Predicate predicate = cb.equal(root.get("state").as(String.class),  label.getState() );// where state ="1"
+                if (label.getState() != null && "".equals(label.getState())) {
+                    Predicate predicate = cb.equal(root.get("state").as(String.class), label.getState());// where state ="1"
                 }
                 //new 一个数组作为最终返回值
                 Predicate[] predicates = new Predicate[predicateList.size()];
